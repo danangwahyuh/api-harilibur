@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const getHTMLCalendar = async (month, year) => {
-    const response = await fetch(`https://kalenderbali.com?bl=${month}&th=${year}`);
+    const response = await fetch(`https://tanggalan.com/?bl=${month}&th=${year}`);
     if (!response.ok) {
         throw new Error(`An error has occured: ${response.status}`);
     }
